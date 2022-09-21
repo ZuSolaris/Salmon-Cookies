@@ -26,11 +26,30 @@ p { color:rgb(253, 221, 12);
 
 
 }
-li
-{
+ul{color:rgb(241, 209, 0);
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 font-weight: bold;
 
+}
+/*City name tables */
+th{
+  border: solid rgb(241, 209, 0) 4px;
+  color: rgb(241, 209, 0);
+  
+}
+
+table{border: solid rgb(241, 209, 0) 4px;
+  color: rgb(241, 209, 0);
+}
 
 
+tr {border: solid rgb(241, 209, 0) 4px;
+  color: rgb(241, 209, 0);
+}
+
+
+
+td{border: solid rgb(241, 209, 0) 2px;
+  color: rgb(241, 209, 0);
+  padding-right: 7rem;
 }
