@@ -29,4 +29,5 @@ https://www.publicdomainpictures.net/en/free-download.php?image=granite-rock-tex
 
 
 ### Reflections
+
 Looking back at all that has been added to this project its wild to see that I created this page. The amount of improvement is astronomical!
