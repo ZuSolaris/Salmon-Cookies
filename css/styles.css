@@ -1,24 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
-header {color:rgb(241, 209, 0);
-  text-shadow: 2px 2px #d7a852
 
+#compnyname {
+  font-weight: bold;
+  font-size: x-large
+}
+
+header {
+  background-image: url("../img/WOULD.jpg");
+}
+
+/* Side Bar */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: url("../img/WOULD.jpg");
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+/* The sidebar links */
+.sidebar a {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  display: block;
+  transition: 0.3s;
+  border-bottom: #111;
+  border-style: groove;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bolder;
+
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+  background-image: url("../img/granit.jpg");
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+nav ul {
+  display: flex;
+  justify-content: left;
+}
+
+nav ul li {
+  font-size: 22px;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+#headr {
+  color: white
+}
+
+#hero {
+  padding: 20vw;
+  padding-bottom: 40vw;
+  background-image: url("../img/Salmon.gif");
+  background-repeat: none;
+  background-size: cover
+}
+
+
+#the {
+  display: flex;
+  justify-content: center;
+  border: 200 px solid;
+  border-radius: 30px;
+
+
+}
+
+section h1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: black;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+
+
+}
+
+.flavor {
+  display: flex;
+  justify-content: center;
+  font-size: 52px;
+  color: rgb(255, 255, 255);
+  font-family: 'Ubuntu', sans-serif;
+
+
+
+}
+
+#imgs {
+  display: flex;
+  flex-direction: column;
+
+
+
+
+}
+
+.imgli {
+  border: none;
+  border-radius: 200px;
+  align-self: flex-end;
+  width: 400px;
+  margin: 40px;
+
+
+}
+
+.imgli2 {
+  border: none;
+  border-radius: 200px;
+  align-self: flex-start;
+  width: 400px;
+  margin: 40px;
+}
+
+
+.Descleft {
+  background-image: url("../img/granit.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(0, 0, 0);
+  font-family: 'Ubuntu', sans-serif;
+  margin-left: 20%;
+  margin-bottom: 10%;
+  padding: 3vw;
+  list-style: none;
+  font-size: 1.5vw;
+  font-weight: bolder;
+  border: none;
+  border-radius: 2vw
+}
+
+.Descright {
+  background-color: black;
+
+  color: rgb(255, 255, 255);
+  font-family: 'Ubuntu', sans-serif;
+  margin-right: 20%;
+  margin-bottom: 10%;
+  padding: 3vw;
+  list-style: none;
+  font-size: 1.5vw;
+  font-weight: bolder;
+  border: none;
+  border-radius: 2vw
+}
+
+
+.loc {
+  font-size: 1vw;
+  color: white;
+  display: flex;
+  justify-content: center;
+  background-color: black;
 
 }
 
 
 
-body{background-color: rgb(3, 30, 83);
+
+#logo {
+  flex: auto;
+  margin-bottom: 30px;
+  width: 100px;
+}
+
+body {
+  background-color: black;
+  background-image: url("../img/river2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+section h2 {
+  background-color: black;
+  color: azure;
 
 
 }
 
+p {
 
-h2{color: rgb(253, 221, 12);
-
-
-
-}
-p { color:rgb(253, 221, 12);
+  color: rgb(253, 221, 12);
   font-weight: bolder;
   font-size: larger;
 
@@ -26,30 +256,80 @@ p { color:rgb(253, 221, 12);
 
 
 }
-ul{color:rgb(241, 209, 0);
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-weight: bold;
+
+ul {
+
+  color: rgb(241, 209, 0);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
 
 }
+
 /*City name tables */
-th{
+th {
   border: solid rgb(241, 209, 0) 4px;
   color: rgb(241, 209, 0);
-  
+
 }
 
-table{border: solid rgb(241, 209, 0) 4px;
+table {
+  border: solid rgb(241, 209, 0) 4px;
   color: rgb(241, 209, 0);
 }
 
 
-tr {border: solid rgb(241, 209, 0) 4px;
+tr {
+  border: solid rgb(241, 209, 0) 4px;
   color: rgb(241, 209, 0);
 }
 
 
 
-td{border: solid rgb(241, 209, 0) 2px;
+td {
+  border: solid rgb(241, 209, 0) 2px;
   color: rgb(241, 209, 0);
   padding-right: 7rem;
+}
+
+footer {
+  background-image: url("../img/WOULD.jpg");
+  width: auto;
+  margin-top: auto;
+  height: 100px;
+}
+
+h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+#y {
+  color: aquamarine;
+
+}
+
+#btm {
+  font-size: 1vw;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background-color: black;
+  color: white
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+}
+
+footer li {
+  list-style: none;
+  color: rgb(241, 209, 0);
+
+
+
+
+
 }

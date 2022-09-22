@@ -2,7 +2,6 @@
 
 
 
-
 //Strict Definitions
 const salmonPage = document.getElementById('salmon-Page');
 const hours = ['6AM', '7AM', '8AM', '9AM', '10AM', '11AM', '12AM', '1PM', '2PM', '3PM', '4PM', '5PM', '6PM', '7PM'];
@@ -120,3 +119,5 @@ cities[4].saleAvg();
 cities[4].render();
 console.log(cities);
 totalHours();
+
+

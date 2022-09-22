@@ -4,30 +4,119 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
-  <title>Pat's Salmon Cookies</title>
+  <title id="compnyname">Pat's Salmon Cookies</title>
 </head>
 
   <header>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#City">Locations</a>
+      <a href="#imgs">About Us</a>
+      <a href="#City">Contact Us (Corporate)</a>
+      <a href="https://zusolaris.github.io/cookie-stand/sales.html">Data For Nerds!</a>
+    </div>
+    
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">&#9776; Quick Links</button>
+      <h2></h2>
+      <p></p>
+    </div>
+
+
+
+
     <nav>
-      <h1>Pat's Salmon Cookies</h1>
-        <h3>They are Salmon Flavored Salmon Cookies! and more!</h3>
-        <a href="https://zusolaris.github.io/cookie-stand/sales.html">Our Global Operation Stats!</a>
+      <ul>
+      <li><img id="logo" src="img/salmonella.png" alt="river"></li>
+      <li><h1>Pat's Salmon Cookies</h1></li>
+       <li><h3>They are Salmon Flavored Salmon Cookies! and more!</h3></li>
+      <li><a id="headr" href="https://zusolaris.github.io/cookie-stand/sales.html">Cookies on a Global Scale!</a></li>
+      </ul>
     </nav>
-    <body>
-      <img src="img/Salmon.gif" alt="river">
-
   </header>
-  <h2>Look at our <em>EXTENSIVE</em> list of flavors!<h2>
-    <img src="img/salmonella.png" alt="river">
 
-  <ul>
-    <li>Salmonilla (Vanilla)</li>
-    <li>Rocky River(Chocolate)</li>
-    <li>Salmon Squared (Salmon)</li>
+    <body>
+      <section><h1>Welcome to Our Website!</h1></section>
+      <li id="hero"></li>
+<section>
+  <h2>Try Our New Flavors!</h2>
+      <ul>
+        <li id="the" ><img class="imgli" src="https://github.com/codefellows/seattle-code-201d90/blob/main/class-08/lab-b/image-assets/frosted-cookie.jpg?raw=true" alt="river"></li>
+        <li class="flavor">Salmonilla (Vanilla)</li>
+        <li class="flavor">Rocky River(Chocolate)</li>
+        <li class="flavor">Salmon Squared (Salmon)</li>
+      </ul>
+</section>
+<!-- Images -->
+ <section id="imgs">
+  
+   <img class="imgli" src="https://github.com/codefellows/seattle-code-201d90/blob/main/class-08/lab-b/image-assets/chinook.jpg?raw=true" alt="river">
+  <li class="Descleft"> Laser precision on our cookie design made from locally sourced Salmon of the Pacific North West! </li>
+   <img class="imgli2" src="https://github.com/codefellows/seattle-code-201d90/blob/main/class-08/lab-b/image-assets/cutter.jpeg?raw=true" alt="river"> <li class="Descright">Anti-microbial state of the art cookie cutting technology! Used on every cookie!  </li>
+   
+   <img class="imgli" src="https://github.com/codefellows/seattle-code-201d90/blob/main/class-08/lab-b/image-assets/family.jpg?raw=true" alt="river">
+   <li class="Descleft">Salmon Cookies are great for all ages! From Ma to Pa and everything in between!  </li>
+   <img class="imgli2" src="https://github.com/codefellows/seattle-code-201d90/blob/main/class-08/lab-b/image-assets/fish.jpg?raw=true" alt="river"><li class="Descright">Frontline designers investing in creative colors for all occasions! Customize a cookie today! </li>
+   <img class="imgli" src="https://github.com/codefellows/seattle-code-201d90/blob/main/class-08/lab-b/image-assets/shirt.jpg?raw=true" alt="river">
+
+   <li class="Descleft"> Love our cookies?! You'll love our merch! </li>
+    </h2></section>
+<!-- image -->
+
+<section>
+  <h2>Hours of Operation</h2>
+  <ul id="btm">
+<li id="y"> Mon: 6AM - 8PM -</li>
+<li> Tue: 6AM - 8PM -</li>
+<li id="y"> Wed: 6AM - 8PM -</li>
+<li> Thu: 6AM - 8PM -</li>
+<li id="y"> Fri: 6AM - 8PM -</li>
+<li> Sat: 6AM - 8PM -</li>
+<li id="y"> Sun: Closed </li>
+
+
   </ul>
+</section>
+<section>
+
+  <h2 id ="City">Cities and Locations</h2>
+<ul>
+<li class="loc">Seattle, WA Eastlake Dr. 98122
+</li>
+<li class="loc">Tokyo, JP Sunshine Ave. 100-0003
+</li>
+<li class="loc">Dubai, UAE Sand St. 00000
+</li>
+<li class="loc">Paris, FR Rock Blvd. 19000
+</li>
+<li class="loc">Lima, PU Tropical Ld. 02875
+</li>
+
+
+</ul>  
+</section>
+  
 </body>
 <footer>
+  <ul>Contact Us</ul>
+  <li>PatFaikNaime@PNWCookies.com</li>
+  <li>Corporate: 206-207-2089</li>
 <p>Zoe Gonzalez Web Design &copy </p>
+<!-- Start of side bar logic! -->
+<script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
+
+
 </footer>
 </html>
