@@ -1,23 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
 
-
+  <!-- Cookie Table Section -->
   <title>Cookie Sales</title>
 </head>
+
 <body>
   <header>
-  <h2><a href="">Pat's Salmon Cookies Global</h2>
-  <a href="https://zusolaris.github.io/cookie-stand/index.html">Our Global Operation Stats!</a>
+    <h2><a href="">Pat's Salmon Cookies Global</h2>
+    <a href="https://zusolaris.github.io/cookie-stand/index.html">Our Global Operation Stats!</a>
   </header>
   <main>
-<section id="salmon-Page"></section>
+    <section id="salmon-Page"></section>
   </main>
 
+  <!-- Cookie Generator Section -->
+  <section>
+    <form id="pageform">
+      <fieldset>
+        <li>
+
+          <label for="cookies-Shp">PSC Co. Location Predictor Tool</label>
+        </li>
+
+        <label for="citiname">Enter City Name:</label>
+        <input id="citiname" type="text" name="citiname">
+
+        <label for="min">Enter City Traffic Low:</label>
+        <input id="min" type="text" name="min">
+
+        <label for="max">Enter City Traffic High:</label>
+        <input id="max" type="text" name="max">
+
+        <label for="avg">Enter City Traffic Average:</label>
+        <input id="avg" type="text" name="avg">
+
+        <li class="button">
+          <button id="submit" type="submit">Play it Out!</button>
+        </li>
+      </fieldset>
+    </form>
+
+    </ul>
+  </section>
 </body>
 <script src="app.js"></script>
+
 </html>

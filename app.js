@@ -6,6 +6,7 @@
 const salmonPage = document.getElementById('salmon-Page');
 const hours = ['6AM', '7AM', '8AM', '9AM', '10AM', '11AM', '12AM', '1PM', '2PM', '3PM', '4PM', '5PM', '6PM', '7PM'];
 const tabElem = document.createElement('table');
+tabElem.setAttribute('id', 'tabElem');
 salmonPage.appendChild(tabElem);
 
 //Cities Storage//
@@ -74,6 +75,7 @@ City.prototype.render = function () {
   let totd = document.createElement('td');
   totd.textContent = `${this.name} Total: ${this.total}`;
   tbrw.appendChild(totd);
+
 },
 // City Sales Average Logic//
 City.prototype.saleAvg = function () {
@@ -86,21 +88,21 @@ City.prototype.saleAvg = function () {
   }
 };
 function totalHours() {
-  let row2 = document.createElement('tr');
-  tabElem.appendChild(row2);
 
-  let blnk2 = document.createElement('th');
-  blnk2.textContent = '';
-  row2.appendChild(blnk2);
+  let tft = document.createElement('tfoot');
+  tabElem.appendChild(tft);
+
+  let rw = document.createElement('tr');
+  rw.textContent = 'Total';
+  tft.appendChild(rw);
 
   for (let data of hoursstore) {
-    let hrtl = document.createElement('th');
-    hrtl.textContent = data;
-    row2.appendChild(hrtl);
+    let th1 = document.createElement('th');
+    th1.textContent = data;
+    rw.appendChild(th1);
   }
 
 }
-
 //Seattles
 cities[0].saleAvg();
 cities[0].render();
@@ -118,6 +120,50 @@ cities[3].render();
 cities[4].saleAvg();
 cities[4].render();
 console.log(cities);
+
+// Form Logic
 totalHours();
+
+function deleter() {
+  document.getElementById('tabElem').deleteTFoot();
+}
+
+
+
+function Submission(event) {
+
+  event.preventDefault();
+
+  let cityName = event.target.citiname.value;
+  let salemin = event.target.min.value;
+  let salemax = event.target.max.value;
+  let avgcke = event.target.avg.value;
+
+  let newCity = new City(cityName, salemin, salemax, avgcke);
+  deleter();
+  newCity.saleAvg();
+
+  newCity.render();
+  totalHours();
+
+
+}
+
+const pageform = document.getElementById('pageform');
+pageform.addEventListener('submit', Submission);
+
+
+
+//Total Hours End
+
+console.log(pageform);
+
+
+
+
+
+
+
+
 
 
