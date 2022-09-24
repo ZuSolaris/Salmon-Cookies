@@ -199,7 +199,6 @@ section h1 {
 
 .Descright {
   background-color: black;
-
   color: rgb(255, 255, 255);
   font-family: 'Ubuntu', sans-serif;
   margin-right: 20%;
@@ -232,7 +231,8 @@ section h1 {
 }
 
 
-a { color: rgb(253, 221, 12);
+a { 
+  color: rgb(253, 221, 12);
   font-weight: bolder;
   font-size: larger;
   font-family: 'Ubuntu', sans-serif;
@@ -256,18 +256,16 @@ section h2 {
 
 }
 
-fieldset {background-image: url("../img/WOULD.jpg");
+fieldset {
+  background-image: url("../img/WOULD.jpg");
 
 
 }
-label{ color: rgb(253, 221, 12);
+label{
+  color: rgb(253, 221, 12);
   font-weight: bolder;
   font-size: larger;
   font-family: 'Ubuntu', sans-serif;
-
-
-
-
 }
 
 
@@ -276,45 +274,37 @@ label{ color: rgb(253, 221, 12);
 
 
 p {
-
   color: rgb(253, 221, 12);
   font-weight: bolder;
   font-size: larger;
-
-
-
-
 }
 
 ul {
-
-  color: rgb(241, 209, 0);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-
+color: rgb(241, 209, 0);
+ font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
 }
 
 /*City name tables */
-th {
-  border: solid rgb(241, 209, 0) 4px;
+th {border: solid rgb(241, 209, 0) 4px;
   color: rgb(241, 209, 0);
 
 }
 
-table {
-  border: solid rgb(241, 209, 0) 4px;
-  color: rgb(241, 209, 0);
-}
-
-
-tr {
+table {font-family: Arial, Helvetica, sans-serif;
   border: solid rgb(241, 209, 0) 4px;
   color: rgb(241, 209, 0);
 }
 
 
+tr {font-family: Arial, Helvetica, sans-serif;
+  border: solid rgb(241, 209, 0) 4px;
+  color: rgb(241, 209, 0);
+}
 
-td {
+
+
+td {font-family: Arial, Helvetica, sans-serif;
   border: solid rgb(241, 209, 0) 2px;
   color: rgb(241, 209, 0);
   padding-right: 7rem;
@@ -353,12 +343,7 @@ footer p {
   justify-content: center;
 }
 
-footer li {
+footer li {font-family: Georgia, 'Times New Roman', Times, serif;
   list-style: none;
   color: rgb(241, 209, 0);
-
-
-
-
-
 }
